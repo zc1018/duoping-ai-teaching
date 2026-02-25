@@ -1,0 +1,187 @@
+{
+  "questions": [
+    {
+      "id": "grammar_001",
+      "type": "grammar_fill",
+      "title": "语法填空 - 世界写信日",
+      "content": "Do you know World Letter Writing Day? It falls (1)____ September 1st every year. On this day, people are encouraged (2)____(take) a break from typing on a computer and write letters to express their feelings.\n\nWriting letters (3)____(be) a common way of communication in the past. But now, fewer and fewer people choose to write letters. Many people think writing letters is too slow.\n\nHowever, letters are (4)____(value) than emails in some ways. A handwritten letter shows more care and love. When you receive a letter, you can feel the (5)____(warm) from the sender.",
+      "answers": [
+        {
+          "blankId": 1,
+          "answer": "on",
+          "explanation": "具体日期前用介词 on"
+        },
+        {
+          "blankId": 2,
+          "answer": "to take",
+          "keyPoint": {
+            "phrase": "encourage sb. to do sth.",
+            "type": "fixed_collocation"
+          }
+        },
+        {
+          "blankId": 3,
+          "answer": "was",
+          "explanation": "根据 in the past，用一般过去时"
+        },
+        {
+          "blankId": 4,
+          "answer": "more valuable",
+          "explanation": "than 提示用比较级"
+        },
+        {
+          "blankId": 5,
+          "answer": "warmth",
+          "explanation": "定冠词 the 后需要名词"
+        }
+      ],
+      "teachingFlow": [
+        {
+          "step": 1,
+          "aiMessage": "👋 同学你好！我们今天来做一道语法填空题。首先，请用 30 秒快速浏览全文，了解文章大意。准备好了告诉我～",
+          "expectedAction": "timer_30s"
+        },
+        {
+          "step": 2,
+          "aiMessage": "很好！这篇文章讲的是什么主题？",
+          "expectedAnswer": "写信|信|letter|World Letter Writing Day|世界写信日",
+          "matchType": "keyword"
+        },
+        {
+          "step": 3,
+          "targetBlank": 1,
+          "aiMessage": "对！文章讲的是「世界写信日」。现在我们来做第 1 空。题目说 'It falls ____ September 1st'，空格后面是具体日期 September 1st。在具体日期前面应该用哪个介词？",
+          "expectedAnswer": "on",
+          "matchType": "exact"
+        },
+        {
+          "step": 4,
+          "targetBlank": 2,
+          "aiMessage": "🎉 答对了！具体日期前用 on。\n\n现在看第 2 空：'people are encouraged ____(take)'。括号里给的原形是 take，这里考查的是什么固定搭配？",
+          "expectedAnswer": "encourage sb. to do|to take|encourage to do",
+          "matchType": "keyword"
+        },
+        {
+          "step": 5,
+          "targetBlank": 2,
+          "aiMessage": "太棒了！encourage sb. to do sth. 表示「鼓励某人做某事」，所以这里填 to take 📝",
+          "expectedAction": "add_knowledge"
+        },
+        {
+          "step": 6,
+          "targetBlank": 3,
+          "aiMessage": "接下来是第 3 空：'Writing letters ____(be) a common way...'。注意后面有 'in the past'，这提示我们用什么时态？",
+          "expectedAnswer": "was|过去时|一般过去时",
+          "matchType": "keyword"
+        },
+        {
+          "step": 7,
+          "targetBlank": 4,
+          "aiMessage": "正确！根据 in the past 用一般过去时，Writing letters 作主语是单数，所以填 was。\n\n第 4 空：'letters are ____(value) than emails'，看到 than 这个词，你想到了什么？",
+          "expectedAnswer": "比较级|more valuable|更有价值",
+          "matchType": "keyword"
+        },
+        {
+          "step": 8,
+          "targetBlank": 5,
+          "aiMessage": "非常好！than 提示我们用比较级。value 是多音节词，所以用 more valuable。\n\n最后一空：'you can feel the ____(warm)'。the 后面需要什么词性的词？",
+          "expectedAnswer": "名词|warmth|温暖",
+          "matchType": "keyword"
+        },
+        {
+          "step": 9,
+          "aiMessage": "🎊 恭喜你完成了所有题目！\n\n✅ 正确答案：\n1. on（具体日期用 on）\n2. to take（encourage sb. to do sth.）\n3. was（in the past 用过去时）\n4. more valuable（than 用比较级）\n5. warmth（the 后用名词）\n\n你今天积累了很多知识点呢！可以点击右侧的知识卡片复习。",
+          "expectedAction": "complete"
+        }
+      ]
+    },
+    {
+      "id": "reading_001",
+      "type": "reading_comprehension",
+      "title": "阅读理解 - 音乐之声",
+      "content": "Anyone who has seen The Sound of Music, the famous Oscar-winning movie, knows the beautiful city of Salzburg in Austria. The movieerta tells the story of Maria, a young woman who becomes a governess for a wealthy family with seven children.\n\nSalzburg is also the birthplace of Mozart, one of the greatest composers in history. Every year, thousands of tourists visit the city to see Mozart's birthplace and enjoy classical music concerts.\n\nThe city is surrounded by mountains and has many beautiful gardens. In summer, visitors can enjoy outdoor concerts in the gardens. In winter, the mountains offer excellent skiing opportunities.\n\n【Questions】\n1. What is Salzburg famous for?\nA. Its beaches\nB. The Sound of Music and Mozart\nC. Modern technology\nD. Fashion industry\n\n2. Who was Mozart?\nA. A famous actor\nB. A great composer\nC. A movie director\nD. A ski instructor\n\n3. What can visitors do in Salzburg in winter?\nA. Swimming\nB. Surfing\nC. Skiing\nD. Sailing",
+      "answers": [
+        {
+          "blankId": 1,
+          "answer": "B",
+          "explanation": "文章提到 Salzburg 因《音乐之声》和莫扎特而闻名"
+        },
+        {
+          "blankId": 2,
+          "answer": "B",
+          "explanation": "文章说 Mozart 是 one of the greatest composers"
+        },
+        {
+          "blankId": 3,
+          "answer": "C",
+          "explanation": "文章最后提到 the mountains offer excellent skiing opportunities"
+        }
+      ],
+      "sentenceStructures": [
+        {
+          "original": "Anyone who has seen The Sound of Music, the famous Oscar-winning movie, knows the beautiful city of Salzburg in Austria.",
+          "structure": {
+            "subject": "Anyone",
+            "attributiveClause": "who has seen The Sound of Music",
+            "appositive": "the famous Oscar-winning movie",
+            "predicate": "knows",
+            "object": "the beautiful city of Salzburg in Austria"
+          }
+        }
+      ],
+      "teachingFlow": [
+        {
+          "step": 1,
+          "aiMessage": "👋 现在我们来做一道阅读理解题！首先请快速浏览文章，了解大意。准备好了告诉我～",
+          "expectedAction": "timer_30s"
+        },
+        {
+          "step": 2,
+          "aiMessage": "这篇文章主要讲的是哪个城市？",
+          "expectedAnswer": "Salzburg|萨尔茨堡|奥地利",
+          "matchType": "keyword"
+        },
+        {
+          "step": 3,
+          "aiMessage": "很好！文章讲的是奥地利的萨尔茨堡。\n\n我们来分析第一句的结构：\n\n📖 Anyone who has seen The Sound of Music, the famous Oscar-winning movie, knows...\n\n你能找出这句话的主语是什么吗？",
+          "expectedAnswer": "Anyone|anyone who",
+          "matchType": "keyword",
+          "expectedAction": "show_structure"
+        },
+        {
+          "step": 4,
+          "aiMessage": "正确！主语是 Anyone。\n\n🔍 句子解构：\n┌─────────────────────────────┐\n│ Anyone [主语]                │\n│   └─ who has seen... [定语从句] │\n│       └─ , the Oscar... [插入语] │\n│ knows [谓语]                 │\n│ the beautiful city [宾语]    │\n└─────────────────────────────┘\n\n'who has seen The Sound of Music' 是什么成分？",
+          "expectedAnswer": "定语从句|从句|修饰",
+          "matchType": "keyword"
+        },
+        {
+          "step": 5,
+          "aiMessage": "太棒了！这是一个定语从句，修饰 Anyone。\n\n现在来看第 1 题：What is Salzburg famous for?\n\n请在文章中找出相关信息，选择正确答案（A/B/C/D）",
+          "targetBlank": 1,
+          "expectedAnswer": "B",
+          "matchType": "exact"
+        },
+        {
+          "step": 6,
+          "targetBlank": 1,
+          "aiMessage": "🎉 正确！答案是 B。\n\n📌 原文定位：文章开头提到 'The Sound of Music' 和 'the birthplace of Mozart'，所以萨尔茨堡因电影和莫扎特闻名。\n\n第 2 题：Who was Mozart?",
+          "expectedAnswer": "B",
+          "matchType": "exact"
+        },
+        {
+          "step": 7,
+          "targetBlank": 2,
+          "aiMessage": "✅ 正确！Mozart 是 'one of the greatest composers in history'（历史上最伟大的作曲家之一）。\n\n最后一题：What can visitors do in Salzburg in winter?",
+          "expectedAnswer": "C",
+          "matchType": "exact"
+        },
+        {
+          "step": 8,
+          "targetBlank": 3,
+          "aiMessage": "🎊 恭喜你完成了阅读理解！\n\n✅ 正确答案：\n1. B（因《音乐之声》和莫扎特闻名）\n2. B（伟大的作曲家）\n3. C（可以滑雪）\n\n📝 今天学到的重点：\n• 定语从句 who/which/that\n• 快速定位关键信息\n• 同位语的识别",
+          "expectedAction": "complete"
+        }
+      ]
+    }
+  ]
+}

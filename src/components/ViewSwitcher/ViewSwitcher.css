@@ -1,0 +1,37 @@
+.view-switcher {
+    display: flex;
+    background: #f1f2f6;
+    padding: 4px;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+
+.view-switcher__btn {
+    border: none;
+    background: transparent;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.view-switcher__btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.view-switcher__btn.active {
+    background: white;
+    color: #2c3e50;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.view-switcher__btn .icon {
+    font-size: 1.1rem;
+}

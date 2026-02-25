@@ -1,0 +1,226 @@
+/* 阶段切换弹窗样式 */
+.stage-transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(45, 45, 68, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fade-in 0.3s ease;
+}
+
+.stage-transition-modal {
+  background: linear-gradient(135deg, #FFFEF7 0%, #FFF8E1 100%);
+  border: 4px solid #2D2D44;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 8px 8px 0 #2D2D44, 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: slide-up 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 图标区域 */
+.stage-transition__icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage-transition__icon-emoji {
+  font-size: 3rem;
+  z-index: 2;
+  animation: bounce-emoji 1s ease-in-out infinite;
+}
+
+.stage-transition__icon-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #FF6B9D;
+  border-radius: 50%;
+  animation: ripple 2s ease-out infinite;
+}
+
+.stage-transition__icon-ring--2 {
+  border-color: #FFC93C;
+  animation-delay: 0.5s;
+}
+
+/* 标题 */
+.stage-transition__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2D2D44;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 0 rgba(255, 107, 157, 0.2);
+}
+
+/* 消息内容 */
+.stage-transition__message {
+  color: #5A5A72;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.stage-transition__message p {
+  margin: 8px 0;
+}
+
+.stage-transition__message p:first-child {
+  font-weight: 600;
+  color: #2D2D44;
+}
+
+/* 按钮区域 */
+.stage-transition__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stage-transition__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border: 3px solid #2D2D44;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stage-transition__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 #2D2D44;
+}
+
+.stage-transition__btn:active {
+  transform: translateY(0);
+  box-shadow: 2px 2px 0 #2D2D44;
+}
+
+.stage-transition__btn--continue {
+  background: linear-gradient(135deg, #FF6B9D 0%, #FF8C42 100%);
+  color: white;
+}
+
+.stage-transition__btn--continue:hover {
+  background: linear-gradient(135deg, #FF5277 0%, #FF7A2E 100%);
+}
+
+.stage-transition__btn--skip {
+  background: #E8E8EC;
+  color: #5A5A72;
+}
+
+.stage-transition__btn--skip:hover {
+  background: #DCDCE4;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+.btn-text {
+  font-size: 1rem;
+}
+
+/* 提示信息 */
+.stage-transition__hint {
+  font-size: 0.8rem;
+  color: #9E9EB0;
+  padding: 12px;
+  background: rgba(158, 158, 176, 0.1);
+  border-radius: 8px;
+  border: 2px dashed #DCDCE4;
+}
+
+/* 动画 */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounce-emoji {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+  .stage-transition-modal {
+    padding: 28px;
+    margin: 20px;
+  }
+
+  .stage-transition__title {
+    font-size: 1.25rem;
+  }
+
+  .stage-transition__message {
+    font-size: 0.9rem;
+  }
+
+  .stage-transition__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .stage-transition__icon-emoji {
+    font-size: 2.5rem;
+  }
+
+  .stage-transition__btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}

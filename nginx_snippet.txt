@@ -1,0 +1,11 @@
+
+    # 多屏教学 Multi-screen Teaching
+    location /duoping/ {
+        alias /var/www/html/duoping/;
+        index index.html;
+        try_files $uri $uri/ /duoping/index.html;
+    }
+
+    location /duoping/assets/ {
+        alias /var/www/html/duoping/assets/;
+    }

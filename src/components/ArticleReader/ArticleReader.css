@@ -1,0 +1,105 @@
+.article-reader {
+    padding: 32px;
+    background: white;
+    height: 100%;
+    overflow-y: auto;
+    font-family: 'Georgia', serif;
+    /* Article feeling */
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+.article-reader__header {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+}
+
+.article-tag {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.article-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.article-content {
+    font-size: 1.15rem;
+    white-space: pre-wrap;
+    /* Preserve newlines */
+}
+
+/* Anchors */
+.article-archor {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+    border-radius: 4px;
+}
+
+.article-anchor--important {
+    background-color: rgba(255, 235, 59, 0.3);
+    border-bottom-color: #fbc02d;
+}
+
+.article-anchor--error_prone {
+    background-color: rgba(255, 87, 34, 0.15);
+    border-bottom-color: #ff5722;
+}
+
+.article-anchor--skip {
+    background-color: rgba(158, 158, 158, 0.2);
+    border-bottom-color: #9e9e9e;
+    color: #757575;
+}
+
+.article-archor:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
+
+.article-anchor--active {
+    background-color: rgba(63, 81, 181, 0.2);
+    border-bottom-color: #3f51b5;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.anchor-indicator {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3f51b5;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    animation: bounce 1s infinite;
+    font-family: sans-serif;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -4px);
+    }
+}
